@@ -1,0 +1,4 @@
+create or replace view suspected_employees as
+select distinct concat(a.first_name, ' ', a.last_name) as rider_name, concat(b.first_name, ' ', b.last_name) as employee_name
+from suspects as a
+inner join employees as b on a.last_name = b.last_name

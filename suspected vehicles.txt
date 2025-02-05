@@ -1,0 +1,7 @@
+create or replace view suspected_vehicles as
+select distinct a.vehicle_id, d.name, d.address, c.status, c.current_location
+from public.rides as a
+inner join public.vehicle_location_histories as b on a.id = b.ride_id
+inner join public.vehicles as c on a.vehicle_id = c.id
+inner join public.users as d on c.owner_id = d.id
+where EXTRACT(year from a.end_time) = 2020 and EXTRACT(month from a.end_time) = 06 and EXTRACT(day from a.end_time) = 23 and (b.lat between -74.997 and -74.9968) and (b.long between 40.5 and 40.6) 
