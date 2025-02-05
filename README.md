@@ -17,4 +17,4 @@ This project tackles the case of Keiko Corp's 2024 data breach by tracing the mo
 2. **Location Analysis:** We narrowed down the location data by focusing on vehicles that were within the specific latitude and longitude range on that day.
 3. **Identified Rider Names:** Extracted the rider names from the data that matched the location and time criteria.
 4. **Employee Matching:** Cross-referenced the rider names with the employee database to identify any shared last names between the riders and employees.
-5. **Culprit Identified:** Based on the name match, we successfully identified the employee responsible for the breach.
+5. **Culprit Identified:** Based on the name match, we successfully identified the employee (Parke Morris), who was responsible for the breach.
